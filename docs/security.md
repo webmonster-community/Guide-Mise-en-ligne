@@ -1,5 +1,5 @@
 
-## Sécurité
+# Sécurité
 **Mot de passe**
 >S'assurer de la force de tous les mots de passe (minimum 12 caractères). Mettre en place une politique de changement de mot de passe régulier en fonction d'une clef de hachage qui elle aussi devra changer régulièrement.
 
@@ -38,13 +38,13 @@ Si vous utilisez Wordpress, il faudra changer les permissions de votre fichier w
 **Cacher les backend/admin**
 > Pour des raisons de sécurité évidentes il est important de masquer l'administration, des robots ou de personnes malveillantes
 
-### Etape 1 - Changer le nom du répertoire
+## Etape 1 - Changer le nom du répertoire
 > Pour masquer le répertoire de votre backend/admin la méthode la plus rapide serait de renommer ce répertoire pour qu'il devienne impossible à repérer. Nous allons donc éviter adm, admin, administration, administrator, root, webroot, back, backend, backoffice...
 > Vous pouvez par exemple renommer le répertoire ou les routes en 9a7d2m1 dans la console.
 
 `# mv admin 9a7d2m1`
 
-### Etape 2 - Empecher l'indexation
+## Etape 2 - Empecher l'indexation
 > Pour empecher l'indexation, nous vous donnons la méthode pour Apache et Nginx
 
 **Nginx**

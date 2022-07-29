@@ -17,3 +17,8 @@ Utiliser chmod pour définir récursivement les droits 750 à votre répertoire 
 Utiliser chmod pour définir les propriétaires d'un répertoire crée par le serveur, il portera ainsi les propriétés de son parent.
 
 `chmod g+s /var/www/html/mon-site.com/`
+
+Il arrive parfois que vous utilisiez des répertoires d'upload ou de cache. Il faut s'assurer que vous avez des droits spécifiques sur ces répertoires en utilisant encore une fois la commande chmod
+
+`chmod g+w /var/www/httml/mon-site.com/<repertoire>`
+

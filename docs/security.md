@@ -106,7 +106,7 @@ response.headers["X-Robots-Tag"] = 'noindex, follow'
 response.headers['X-Robots-Tag'] = 'noindex, nofollow'
 ```
 **React**
-```react
+```javascript
 const meta = {
     title: '',
     description: '',
@@ -127,7 +127,9 @@ resp.headers['X-Robots-Tag'] = 'noindex, nofollow'
 ```
 
 **Personnalisé**
+```apacheconf
 X-Robots-Tag: googlebot: nofollow
 X-Robots-Tag: otherbot: noindex, nofollow
+```
 
 

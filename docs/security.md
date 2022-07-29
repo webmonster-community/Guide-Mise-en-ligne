@@ -48,10 +48,29 @@ Si vous utilisez Wordpress, il faudra changer les permissions de votre fichier w
 > Pour empecher l'indexation, nous vous donnons la méthode pour Apache et Nginx
 
 **Nginx**
-`
+```nginx
+# vi nginx.conf
 location ~ .*/(?:9a7d2m1)/.* {
     
     add_header X-Robots-Tag "noindex, follow" always;      
 
 }
-`
+```
+
+**Apache**
+```apacheconf
+# vi .htaccess
+SetEnvIfNoCase User-Agent .*bot.* search_robot
+SetEnvIfNoCase User-Agent .*bing.* search_robot
+SetEnvIfNoCase User-Agent .*crawl.* search_robot
+Order Deny,Allow
+Deny from env=search_robot
+Allow from All
+```
+
+**Robots.txt**
+```robots
+# vi robots.txt
+User-agent: *
+Disallow: /
+```

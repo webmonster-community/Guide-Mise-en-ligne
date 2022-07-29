@@ -106,6 +106,7 @@ response.headers["X-Robots-Tag"] = 'noindex, follow'
 response.headers['X-Robots-Tag'] = 'noindex, nofollow'
 ```
 **React**
+> Installer [React Document meta](https://www.npmjs.com/package/react-document-meta)
 ```javascript
 const meta = {
     title: '',
@@ -117,6 +118,7 @@ const meta = {
             robots: 'noindex'
         }
     }
+    
 Puis placé dans le return    
 <DocumentMeta {...meta} />
 ```
@@ -127,7 +129,7 @@ resp.headers['X-Robots-Tag'] = 'noindex, nofollow'
 ```
 
 **Personnalisé**
-```apacheconf
+```apache
 X-Robots-Tag: googlebot: nofollow
 X-Robots-Tag: otherbot: noindex, nofollow
 ```

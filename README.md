@@ -11,5 +11,10 @@ Checklist des choses à faire pour une mise en ligne de projet web.
 **Permission des fichiers et répertoires**
 >Les permissions des fichiers et répertoires est une étape indispensable pour sécuriser votre site Internet. En premier lieu il est important de définir un chmod pour l'ensemble de votre répertoire de site
 
-`chmod -R 750 /var/www/my-website.com/`
+Utiliser chmod pour définir récursivement les droits 750 à votre répertoire source
+`chmod -R 750 /var/www/html/mon-site.com/`
+
+Utiliser chmod pour définir les propriétaires d'un répertoire crée par le serveur, il portera ainsi les propriétés de son parent.
+`chmod g+s /var/www/html/mon-site.com/`
+
 

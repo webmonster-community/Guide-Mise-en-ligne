@@ -23,7 +23,6 @@ Il arrive parfois que vous utilisiez des répertoires d'upload ou de cache. Il f
 `chmod g+w /var/www/httml/mon-site.com/<repertoire>`
 
 ````
-```
-Look! You can see my backticks.
-```
+Si vous utilisez Wordpress, il faudra changer les permissions de votre fichier wp-config.php
 ````
+`chmod -v 660 /var/www/httml/mon-site.com/wp-config.php`

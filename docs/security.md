@@ -48,7 +48,7 @@ Si vous utilisez Wordpress, il faudra changer les permissions de votre fichier w
 > Pour empecher l'indexation, nous vous donnons la méthode pour Apache et Nginx
 
 **Nginx**
->Editer le fichier de configuration
+>Editer le fichier de configuration **/etc/nginx/nginx.conf**
 ```nginx
 # vi nginx.conf
 location ~ .*/(?:9a7d2m1)/.* {
@@ -75,7 +75,13 @@ Allow from All
 >Placer un fichier robots.txt à la racine du répertoire **9a7d2m1**
 
 ```robots
+//Pour un sous-domaine
 # vi robots.txt
 User-agent: *
 Disallow: /
+
+//Pour Wordpress
+# vi robots.txt
+User-agent: *
+Disallow: /9a7d2m1/
 ```

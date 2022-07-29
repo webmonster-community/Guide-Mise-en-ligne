@@ -52,7 +52,7 @@ Si vous utilisez Wordpress, il faudra changer les permissions de votre fichier w
 **Etape 2 - Empecher l'indexation**
 > Pour empecher l'indexation, nous vous donnons la méthode pour Apache et Nginx
 
-**Nginx***
+**Nginx**
 >Editer le fichier de configuration **/etc/nginx/nginx.conf**
 ```nginx
 # vi nginx.conf
@@ -90,3 +90,27 @@ Disallow: /
 User-agent: *
 Disallow: /9a7d2m1/
 ```
+
+**php**
+>Dans votre fichier de configuration ou de démarrage, vous pouvez modifier le comportement de votre header en rajoutant 
+
+```php
+header("X-Robots-Tag: noindex, nofollow", true);
+```
+**Ruby**
+```ruby
+response.headers["X-Robots-Tag"] = 'noindex, follow'
+```
+**Python**
+```python
+response.headers['X-Robots-Tag'] = 'noindex, nofollow'
+```
+
+**Flask**
+```flask
+resp.headers['X-Robots-Tag'] = 'noindex, nofollow'
+```
+
+**Personnalisé**
+X-Robots-Tag: googlebot: nofollow
+X-Robots-Tag: otherbot: noindex, nofollow

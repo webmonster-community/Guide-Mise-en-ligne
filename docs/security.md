@@ -105,12 +105,29 @@ response.headers["X-Robots-Tag"] = 'noindex, follow'
 ```python
 response.headers['X-Robots-Tag'] = 'noindex, nofollow'
 ```
+**React**
+```react
+const meta = {
+    title: '',
+    description: '',
+    canonical: 'https://',
+    meta: {
+        charset: 'utf-8',
+        name: {
+            robots: 'noindex'
+        }
+    }
+Puis placé dans le return    
+<DocumentMeta {...meta} />
+```
 
 **Flask**
-```flask
+```javascript
 resp.headers['X-Robots-Tag'] = 'noindex, nofollow'
 ```
 
 **Personnalisé**
 X-Robots-Tag: googlebot: nofollow
 X-Robots-Tag: otherbot: noindex, nofollow
+
+

@@ -48,6 +48,10 @@ Si vous utilisez Wordpress, il faudra changer les permissions de votre fichier w
 > Pour empecher l'indexation, nous vous donnons la méthode pour Apache et Nginx
 
 **Nginx**
-`location ~ .*/(?:archive|filter|topic)/.* {
+`
+location ~ .*/(?:9a7d2m1)/.* {
+    
     add_header X-Robots-Tag "noindex, follow" always;      
-}`
+
+}
+`

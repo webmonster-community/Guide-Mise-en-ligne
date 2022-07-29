@@ -22,3 +22,8 @@ Il arrive parfois que vous utilisiez des répertoires d'upload ou de cache. Il f
 
 `chmod g+w /var/www/httml/mon-site.com/<repertoire>`
 
+````
+```
+Look! You can see my backticks.
+```
+````

@@ -1,3 +1,5 @@
+![img](https://techmonster.info/assets/img/logo-webmonster-community.png)
+
 # MISE EN ROUTE
 
 La communauté **Webmonster** aux Antilles vous propose une checklist des choses à faire pour une mise en ligne de projet web.
